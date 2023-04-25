@@ -6,7 +6,7 @@ import MusicNFTMarketplaceAddress from './contractsData/MusicNFTMarketplace.json
 import MusicNFTMarketplaceAbi from './contractsData/MusicNFTmarketplace-address.json';
 import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
 import {Spinner,Button,Nav,Navbar,Container} from 'react-bootstrap';
-// import Home from './Home.js'
+import Home from './Home.js'
 // import MyTokens from './MyTokens.js'
 // import MyResales from './MyResales.js'
 
@@ -69,7 +69,7 @@ function Navcomp() {
                     </div>
                 ):(
                     <Routes>
-                        <Route path="/" />
+                        <Route path="/Home" />
                         <Route path="/my-token"/>
                         <Route path="/my-resales"/>
                     </Routes>
