@@ -3,6 +3,7 @@ import { ethers } from "ethers"
 import Identicon from 'identicon.js';
 import { Card, Button, ButtonGroup } from 'react-bootstrap'
 
+<<<<<<< HEAD
 const Home = ({ contract }) => {
   const audioRef = useRef(null);
   const [loading, setLoading] = useState(true)
@@ -144,4 +145,11 @@ const Home = ({ contract }) => {
     </div >
   );
 }
+=======
+function Home()
+{
+
+}
+
+>>>>>>> main
 export default Home
