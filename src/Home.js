@@ -93,7 +93,7 @@ const Home = ({ contract }) => {
           <main role="main" className="col-lg-12 mx-auto" style={{ maxWidth: '500px' }}>
             <div className="content mx-auto">
               <audio src={marketItems[currentItemIndex].audio} ref={audioRef}></audio>
-              <Card>
+              <Card className="text-bg-dark p-3">
                 <Card.Header>{currentItemIndex + 1} of {marketItems.length}</Card.Header>
                 <Card.Img variant="top" src={marketItems[currentItemIndex].identicon} />
                 <Card.Body color="secondary">

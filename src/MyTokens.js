@@ -71,7 +71,7 @@ export default function MyTokens({ contract }) {
             {myTokens.map((item, idx) => (
               <Col key={idx} className="overflow-hidden">
                 <audio src={item.audio} key={idx} ref={el => audioRefs.current[idx] = el}></audio>
-                <Card>
+                <Card className="text-bg-dark p-3">
                   <Card.Img variant="top" src={item.identicon} />
                   <Card.Body color="secondary">
                     <Card.Title>{item.name}</Card.Title>

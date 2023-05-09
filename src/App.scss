@@ -1,8 +1,17 @@
 @import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
 
 .App 
 {
+  font-family:'Ubuntu',sans-serif;
   text-align: center;
+}
+
+.grad
+{
+  background: rgb(97, 29, 164); 
+  background: linear-gradient(0deg, rgb(178, 132, 224) 1%, rgba(114, 9, 199, 0.987) 100%);
 }
 
 .App-logo {

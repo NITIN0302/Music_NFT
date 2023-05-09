@@ -36,9 +36,9 @@ function App() {
   }
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App grad">
         <>
-          <Navbar expand="lg" bg="secondary" variant="dark">
+          <Navbar expand="lg" bg="dark" variant="dark">
             <Container>
               <Navbar.Brand>
                 &nbsp; Music NFT player
@@ -74,7 +74,7 @@ function App() {
           {loading ? (
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '80vh' }}>
               <Spinner animation="border" style={{ display: 'flex' }} />
-              <p className='mx-3 my-0'>Awaiting Metamask Connection...</p>
+              <p className='mx-3 my-0 dark' >Awaiting Metamask Connection...</p>
             </div>
           ) : (
             <Routes>

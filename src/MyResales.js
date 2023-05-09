@@ -63,7 +63,7 @@ export default function MyResales({ contract, account }) {
         </main>
     )
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center App">
             <div className="flex justify-center">
                 {listedItems.length > 0 ?
                     <div className="px-5 py-3 container">
@@ -72,7 +72,7 @@ export default function MyResales({ contract, account }) {
                             {listedItems.map((item, idx) => (
                                 <Col key={idx} className="overflow-hidden">
                                     <audio src={item.audio} ref={el => audioRefs.current[idx] = el}></audio>
-                                    <Card>
+                                    <Card className="text-bg-dark p-3">
                                         <Card.Img variant="top" src={item.identicon} />
                                         <Card.Body color="secondary">
                                             <Card.Title>{item.name}</Card.Title>
@@ -107,7 +107,7 @@ export default function MyResales({ contract, account }) {
                                 <Row xs={1} md={2} lg={4} className="g-4 py-3">
                                     {soldItems.map((item, idx) => (
                                         <Col key={idx} className="overflow-hidden">
-                                            <Card>
+                                            <Card className="text-bg-dark p-3">
                                                 <Card.Img variant="top" src={item.identicon} />
                                                 <Card.Body color="secondary">
                                                     <Card.Title>{item.name}</Card.Title>
